@@ -50,7 +50,7 @@ export default function SubirVideo(props) {
 			});
 			setSignUpLoading(false);
 		} else {
-			if (verificarVideo === 'http://localhost:2002/api/v1/get-video/undefined') {
+			if (verificarVideo === 'https://f4c4d7304c4b.ngrok.io/api/v1/get-video/undefined') {
 				uploadVideoSecionApi(token, seccionUpdate.video, seccion._id).then((response) => {
 					seccionUpdate.video = response.seccionName;
 
@@ -88,7 +88,7 @@ export default function SubirVideo(props) {
 
 			<Form className="form-edit" onSubmitCapture={addVideo}>
 				<Form.Item>
-					{verificarVideo === 'http://localhost:2002/api/v1/get-video/undefined' ? (
+					{verificarVideo === 'https://f4c4d7304c4b.ngrok.io/api/v1/get-video/undefined' ? (
 						<Button
 							style={
 								signUpLoading
