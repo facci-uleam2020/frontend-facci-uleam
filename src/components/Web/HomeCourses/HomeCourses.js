@@ -156,7 +156,7 @@ function CardCourse(props) {
 
 
   return (
-    < Link to={{pathname: `/courses/${cursoActive0} `, state: `${cursoActive0}`, }}>
+    < Link to={{pathname: `/courses/${cursoActive0}`, state: `${cursoActive0}`, }}>
       <Card
         className="home-courses__card"
         cover={<img src={image} alt={title} />}
